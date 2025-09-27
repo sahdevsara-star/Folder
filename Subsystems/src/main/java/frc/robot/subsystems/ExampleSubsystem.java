@@ -8,7 +8,7 @@ package frc.robot.subsystems;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class ExampleSubsystem extends SubsystemBase {
+public class ExampleSubsystem extends SubsystemBase implements Reportable {
   /** Creates a new ExampleSubsystem. */
   public ExampleSubsystem() {}
 
@@ -24,6 +24,12 @@ public class ExampleSubsystem extends SubsystemBase {
         () -> {
           /* one-time action goes here */
         });
+  }
+
+  @Override
+  public void initShuffleboard(LOG_LEVEL priority) {
+    // TODO: Need to implement this in future.
+    
   }
 
   /**
